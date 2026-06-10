@@ -28,7 +28,7 @@ function Log(stack, level, pkg, message) {
         stack,
         level,
         package: pkg,
-        message
+        message: message ? message.toString().substring(0, 48) : ''
       });
 
       const headers = {
